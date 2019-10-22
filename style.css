@@ -1,0 +1,194 @@
+.body {
+  background-color: black;
+  animation-name: box-color;
+  animation-duration: 0.25s;
+  animation-iteration-count: infinite;
+}
+
+.box {
+}
+
+.e1 {
+  position: absolute;
+  left: 200px;
+  top: 50px;
+  background-color: red;
+  width: 70px;
+  height: 300px;
+  transition: 1s;
+}
+
+#e2 {
+  position: absolute;
+  left: 200px;
+  top: 50px;
+  background-color: red;
+  width: 180px;
+  height: 70px;
+}
+
+.e3 {
+  position: absolute;
+  left: 200px;
+  top: 280px;
+  background-color: red;
+  width: 180px;
+  height: 70px;
+}
+
+.e4 {
+  position: absolute;
+  left: 200px;
+  top: 170px;
+  background-color: red;
+  width: 120px;
+  height: 60px;
+}
+
+.x1 {
+  position: absolute;
+  left: 450px;
+  top: 160px;
+  width: 15px;
+  height: 0px;
+  border-left: 160px solid transparent;
+  border-right: 160px solid transparent;
+  border-bottom: 190px solid red;
+}
+
+#x2 {
+  position: absolute;
+  left: 450px;
+  top: 50px;
+  width: 15px;
+  height: 0;
+  border-left: 160px solid transparent;
+  border-right: 160px solid transparent;
+  border-top: 190px solid red;
+}
+
+.x3 {
+  position: absolute;
+  left: 545px;
+  top: 50px;
+  width: 0;
+  height: 0;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-top: 90px solid black;
+  animation-name: x3-color;
+  animation-duration: 0.25s;
+  animation-iteration-count: infinite;
+}
+
+.x4 {
+  position: absolute;
+  left: 545px;
+  top: 260px;
+  width: 0;
+  height: 0;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-bottom: 90px solid black;
+}
+
+#i {
+  position: absolute;
+  left: 850px;
+  top: 50px;
+  width: 70px;
+  height: 300px;
+  background-color: red;
+}
+
+#t1 {
+  position: absolute;
+  left: 1060px;
+  top: 50px;
+  width: 70px;
+  height: 300px;
+  background-color: red;
+}
+
+.t2 {
+  position: absolute;
+  left: 980px;
+  top: 50px;
+  width: 230px;
+  height: 60px;
+  background-color: red;
+}
+
+.e1:hover {
+  background-color: red;
+  box-shadow: 0 0 10px #fc4228,
+    0 0 20px #fc4228,
+    0 0 30px #fc4228,
+    0 0 35px #fc4228,
+    0 0 40px #fc4228,
+    0 0 45px #ee6969,
+    0 0 50px #ee6969;
+}
+
+.e3:hover {
+  background-color: red;
+  box-shadow: 0 0 10px #fc4228,
+    0 0 20px #fc4228,
+    0 0 30px #fc4228,
+    0 0 35px #fc4228,
+    0 0 40px #fc4228,
+    0 0 45px #ee6969,
+    0 0 50px #ee6969;
+}
+
+.e4:hover {
+  background-color: red;
+  box-shadow: 0 0 10px #fc4228,
+    0 0 20px #fc4228,
+    0 0 30px #fc4228,
+    0 0 35px #fc4228,
+    0 0 40px #fc4228,
+    0 0 45px #ee6969,
+    0 0 50px #ee6969;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+  @keyframes box-color {
+    from {background-color: black;}
+    to {background-color: red;}
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  @keyframes x3-color {
+    from {background-color: black;}
+
+    to {background-color: red;}
+  }
+}
+
+.animation {
+animation-name: move;
+animation-duration: 3s;
+animation-iteration-count: 11;
+}
+
+@keyframes move {
+  from {left: 850px;}
+  to {width: 1500px;}
+}
+
+.animation2{
+	animation-name: move2;
+	animation-duration: 5s;
+	animation-iteration-count: 10;
+}
+
+@keyframes move2 {
+	from {left: 450px;
+  top: 500px;}
+	to {left: 50px;
+  top: 500px}
+}
